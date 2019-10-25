@@ -5,7 +5,7 @@
 
 ## Introduction ##
 
-Simple Laravel 5 package to add loading indicator to pages while page is loading. Loading indicator is automatically removed after page has fully loaded.
+Laravel package to add loading indicator to pages while page is loading. Loading indicator is automatically removed after page has fully loaded.
 
 Behind the scene, middleware is used to inject needed HTML/CSS/JS before `</body>` tag to show and hide the loading indicator accordingly.
 
