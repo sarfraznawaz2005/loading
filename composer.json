@@ -1,0 +1,28 @@
+{
+  "name": "sarfraznawaz2005/loading",
+  "keywords": [
+    "laravel",
+    "loader",
+    "loading",
+    "indicator"
+  ],
+  "description": "Simple Laravel 5 package to add loading indicator to pages while page is loading.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sarfraz Ahmed",
+      "email": "sarfraznawaz2005@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "illuminate/support": "~5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sarfraznawaz2005\\Loading\\": "src/"
+    }
+  },
+  "minimum-stability": "stable"
+}
