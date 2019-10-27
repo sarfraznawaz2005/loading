@@ -1,5 +1,4 @@
 <?php
-
 namespace Sarfraznawaz2005\Loading\Http\Middleware;
 
 use Closure;
