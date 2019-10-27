@@ -34,6 +34,7 @@ class LoadingMiddleware
     {
         $color = config('loading.color');
         $size = config('loading.size');
+        $clodeLoadingCode = config('loading.hide_event') === 'window' ? 'window.onload = hidePHPLoadingIndicator;' : 'document.addEventListener("DOMContentLoaded", hidePHPLoadingIndicator);';
 
         $sizeMap = [
             'normal' => '12px',
@@ -192,13 +193,12 @@ class LoadingMiddleware
             <div class="php_loading-indicator-with-overlay">Loading&#8230;</div>
 
             <script>
-                window.onload = function() {
-                    var elements = document.getElementsByClassName('php_loading-indicator-with-overlay');
-                    
-                    while(elements.length > 0){
-                        elements[0].parentNode.removeChild(elements[0]);
-                    }                    
-                };
+            $clodeLoadingCode
+            
+            function hidePHPLoadingIndicator() {
+                var element = document.getElementsByClassName('php_loading-indicator-with-overlay')[0];
+                element.parentNode.removeChild(element);                      
+            }
             </script>
 LOADING;
 

@@ -9,6 +9,9 @@ return [
     'size' => 'normal',
 
     // color of loading indicator
-    'color' => '#000'
+    'color' => '#000',
+
+    // hide loading indicator on DOM ready or complete window load. Use either of "window", "dom"
+    'hide_event' => 'window'
 
 ];
