@@ -9,6 +9,8 @@ Laravel package to add loading indicator to pages while page is loading. Loading
 
 Behind the scene, middleware is used to inject needed HTML/CSS/JS before `</body>` tag to show and hide the loading indicator accordingly.
 
+Loading indicators are via to awesome [CSSPIN](https://github.com/webkul/csspin) project.
+
 ## Requirements ##
 
  - PHP >= 7
