@@ -51,6 +51,7 @@ Visit any page and you should see loading indicator at middle of the page while 
 
 Check config file for options.
 
+
 ## Credits
 
 - [Sarfraz Ahmed][link-author]
