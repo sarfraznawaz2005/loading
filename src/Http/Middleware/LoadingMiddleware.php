@@ -59,11 +59,6 @@ class LoadingMiddleware
             return;
         }
 
-        // do nothing in case of ajax binary file content
-        if ($response instanceof BinaryFileResponse) {
-            return;
-        }
-
         $html = <<< LOADING
         <style type="text/css">
         .php-loading-indicator-overlay {                
