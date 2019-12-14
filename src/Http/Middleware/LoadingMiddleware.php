@@ -121,8 +121,7 @@ LOADING;
     private function compress($html)
     {
         ini_set('pcre.recursion_limit', '16777');
-        // enable GZip, too!
-        ini_set('zlib.output_compression', 'On');
+        @ini_set('zlib.output_compression', 'On');
 
         $regEx = '%# Collapse whitespace everywhere but in blacklisted elements.
         (?>             # Match all whitespans other than single space.
