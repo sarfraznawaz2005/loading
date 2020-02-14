@@ -43,7 +43,7 @@ It should publish `config/loading.php` config file.
 
 ## Usage ##
 
-Simply add to `Sarfraznawaz2005\Loading\Http\Middleware\LoadingMiddleware::class` to `app/Http/Kernel.php` either in global middleware section or route section.
+Simply add to `\Sarfraznawaz2005\Loading\Http\Middleware\LoadingMiddleware::class` to `app/Http/Kernel.php` either in global middleware section or route section.
 
 Add in global section if you want loading indicator on all pages automatically or add it to route middleware section if you want to add indictor to certain pages only via `middleware` method in routes.
 
