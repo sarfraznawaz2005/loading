@@ -45,9 +45,9 @@ class LoadingMiddleware
         }
 
         // do nothing in case of ajax request
-        if ($request->ajax() || $request->expectsJson()) {
-            return;
-        }
+       // if ($request->ajax() || $request->expectsJson()) {
+       //     return;
+       // }
 
         // do nothing in case of method which is not GET
         if (!$request->isMethod('get')) {
